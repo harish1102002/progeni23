@@ -1,0 +1,76 @@
+
+
+.head_bg {
+    background: url("https://uploads.codesandbox.io/uploads/user/ac2ac744-249f-4788-a754-0e8532649742/R6Gq-first_screen_bg.jpg")
+      0 0 no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+  }
+  
+  .heroo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    width: 100%;
+   
+  }
+  
+  .hero_ele {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    line-height: 2;
+ 
+  }
+
+  @media (max-width: 768px) {
+    .hero_ele .titles {
+      font-size: 30px !important;
+      
+    }
+  }
+  
+  .hero_ele .titles {
+    font-size: 59px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .hero_ele .name {
+    font-size: 40px;
+  }
+  
+  .content_prof {
+    font-size: 20px;
+  }
+  
+  .content_download {
+    padding-top: 50px;
+    align-items: center;
+  }
+  .ptag{
+    text-align: center;
+  }
+  .content_download p a {
+    color: #000;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #000;
+  }
+  
+  .content_download p a:hover {
+    background: #000;
+    color: #fff;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }

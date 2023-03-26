@@ -1,0 +1,59 @@
+.contact_details{
+    margin: 35px 0;
+    display: flex;
+}
+.contact_details > img{
+    width: 3.5%;
+    margin-right: 10px;
+}
+
+#contact_phone_image{
+    margin-top: -18px
+}
+
+.contact_social{
+    width: 25px;
+    height: 25px;
+    transition: all 0.1s ease-in;
+}
+.contact_number_student{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.contact_number_student > div:nth-child(1){
+    white-space: nowrap;
+}
+.contact_number_student > div:nth-child(2){
+    text-align: end;
+    font-size: 13px;
+}
+.number{
+    display: flex;
+    column-gap: 14px;
+}
+.contact_info{
+    display: grid;
+    grid-template-columns: auto;
+    background: linear-gradient(90deg,#0ba360,#3cba92,#30dd8a,#2bb673);
+    padding: 25px;
+}
+.contact_social:hover{
+    transform: scale(1.2);
+}
+.contact_social_icons{
+    margin-top: 50px;
+    align-self: end;
+}
+
+@media(max-width:1023px){
+    .contact_details > img{
+        width: 5%;
+    }
+    .contact_social{ 
+        justify-self: center;
+    }
+    .contact_social_icons{
+        margin-top: 25px;
+    }
+}

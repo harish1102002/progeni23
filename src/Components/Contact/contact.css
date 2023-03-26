@@ -1,0 +1,40 @@
+.contact{
+    padding: 80px;
+    background-color: #e0e0df;
+}
+.contact_form_container{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    box-shadow: 6px 6px 10px gray;
+    margin-top: 45px;
+}
+.contact_title{
+    text-align: center;
+}
+.contact_title > h2{
+    font-weight: 700;
+    font-size: 40px;
+    margin: 14px 0;
+}
+.social_icons{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 12px;
+}
+@media(max-width :1023px){
+    .contact_form_container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .contact_title > h2{
+        font-size: 30px;
+    }
+    .contact{
+        padding: 10px;
+        padding-bottom: 50px;
+    }
+    .social_icons{
+        margin-top: 22px;
+    }
+}

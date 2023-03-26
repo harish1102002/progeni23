@@ -1,0 +1,26 @@
+ .modal{
+  width:clamp(50%,700px,90%);
+  height:min(50%,300px);
+  margin: 35%;
+  padding: 44%;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ background-color: white;
+  
+}
+
+ .desc{
+ color:black;
+ z-index:3;
+}
+
+.close{
+  margin:20px;
+  outline:none;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  border:none;
+  padding:7px 20px;
+
+}
