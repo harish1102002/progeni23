@@ -19,7 +19,8 @@ function NavBar(props) {
         <div className="nav-container">
 
           <div className="nav-logo">
-            <Link to="/"><img src={progeni_logo} alt="progeni" /></Link>
+            <Link to="/"><img className="logo" src={progeni_logo} alt="progeni" /></Link>
+            <h5>PROGENI ..</h5>
           </div>
           
           <ul className={click ? "nav-menu active" : "nav-menu"}>

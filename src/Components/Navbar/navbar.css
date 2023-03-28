@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+  padding : 0;
+  box-shadow: 0;
+  font-family: 'Poppins', sans-serif;
+}
  .pages {
     color: #316685;
     text-align: center;
@@ -6,7 +13,7 @@
   }
   
   .navbar {
-    background-color: #000000;
+    background : linear-gradient(-135deg,#9c9a9a,rgb(221, 217, 217),#ffffff);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -36,15 +43,16 @@
   }
   
   .nav-logo {
-    color: #ffff;
+    color: #080808;
+    width : 20%;
+    display: flex;
+    justify-content:center;
     align-items: center;
-    margin-left: 3rem;
+    margin-left: -2rem;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
-    flex-grow: 1;
   }
-  
   .nav-menu {
     display: flex;
     list-style: none;
@@ -53,25 +61,27 @@
   }
   
   .nav-links {
-    color: #ffff;
+    color: #040404;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     height: 100%;
     border-bottom: 3px solid transparent;
     font-size: 16px;
   }
-  /* .fa-code {
-    margin-left: 1rem;
-  } */
   
   .nav-logo > a > img{
-    width: 14%;
+    width: 100%;
     margin-bottom: 16px;
   }
-
+ .logo{
+  height : 100px;
+ }
   .nav-item {
     line-height: 40px;
     margin-right: 1rem;
+  }
+  .nav-item > a{
+    font-size: 17px;
   }
   
   .nav-item:after {
@@ -85,15 +95,14 @@
   
   .nav-item:hover:after {
     width: 100%;
-    background: #0aee1d;
+    background: rgb(4, 4, 4);
+    
   }
   .nav-item > a:hover{
-    color:#0aee1d
+    color:rgb(3, 3, 3);
+    text-shadow: 1px 1px 2px #ffffff;
+    
   }
-  .nav-links.active {
-    color: #0aee1d;
-  }
-  
   .nav-icon {
     display: none;
   }
