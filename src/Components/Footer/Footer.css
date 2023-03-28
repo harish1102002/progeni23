@@ -36,7 +36,11 @@
 .footer-links
 {
   padding-left:0;
-  list-style:none
+  list-style:none;
+
+}
+.head{
+  margin-left: 20px;
 }
 .footer-links li
 {

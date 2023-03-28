@@ -14,7 +14,7 @@ function Footer()
             </div>
   
             <div className="col-xs-6 col-md-3">
-              <h6>Events</h6>
+              <h6 className='head'>Events</h6>
               <ul className="footer-links">
                 <li>Mr.Engineer</li>
                 <li>PPT</li>
