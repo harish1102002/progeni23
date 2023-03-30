@@ -6,7 +6,7 @@ import About from "./Components/About/About";
 import Footer from './Components/Footer/Footer';
 import Events from './Components/Events/Events';
 import EventDetails from './Components/Events/EventDetails';
-// import Register from './Components/Register/Register';
+import Register from './Components/Register/Register';
 import Contact from './Components/Contact/contact';
 import ScrollToTop from './Components/ScrollToTop';
 function App() {
@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/events" element={<Events/>} />
           <Route path="/event/:id" element={<EventDetails/>} />
-          <Route path="/register"  element={<Navigate replace to="/" />}>
+          <Route path="/register"  element={<Register/>}>
                
           </Route>
           <Route path="/about-us" element={<About/>} />

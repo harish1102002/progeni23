@@ -10,7 +10,7 @@ function Footer()
           <div className="row">
             <div className="col-sm-12 col-md-6">
               <h6>About</h6>
-              <p className="text-justify">The birth place of futuristic engineering of the future world with creamy bunch of inquisitive brains.With well equipped laboraties and qualified staff where experience speaks,the department act as a base on which talented and innovative circuitry is built.</p>
+              <p className="text-justify para">The birth place of futuristic engineering of the future world with creamy bunch of inquisitive brains.With well equipped laboraties and qualified staff where experience speaks,the department act as a base on which talented and innovative circuitry is built.</p>
             </div>
   
             <div className="col-xs-6 col-md-3">
@@ -41,7 +41,7 @@ function Footer()
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-sm-6 col-xs-12">
-              <p className="copyright-text">Copyright &copy; 2022 All Rights Reserved by<a href="https://gcesalem.edu.in/20/department-computer-science-and-engineering" target="_blank" rel="noreferrer"> CSE</a>.
+              <p className="copyright-text">Copyright &copy; 2023 All Rights Reserved by<a href="https://gcesalem.edu.in/20/department-computer-science-and-engineering" target="_blank" rel="noreferrer"> CSE</a>.
               </p>
             </div>
   

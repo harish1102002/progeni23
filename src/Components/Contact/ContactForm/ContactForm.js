@@ -82,7 +82,7 @@ const ContactForm = () => {
                     <input type="text" value={lname} onChange={lnameChangeHandler} required/>
                 </div>
                 <div className="input_container">
-                    <label className="contact_user">Mail</label>
+                    <label className="contact_user">Mail id</label>
                     <input type="email" value={mail} onChange={mailChangeHandler} required/>
                 </div>
                 <div className="input_container">

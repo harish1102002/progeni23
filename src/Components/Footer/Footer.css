@@ -1,15 +1,15 @@
 .site-footer
 {
   margin-top: 10px;
-  background-color:#26272b;
+  background-color:#050505;
   padding:45px 20px;
   font-size:15px;
   line-height:24px;
-  color:#737373;
+  color:#ffffff;
 }
 .site-footer hr
 {
-  border-top-color:#bbb;
+  border-top-color:#ffffff;
   opacity:0.5
 }
 .site-footer hr.small
@@ -24,9 +24,12 @@
   margin-top:5px;
   letter-spacing:2px
 }
+.para{
+  margin-top: 30px;
+}
 .site-footer a
 {
-  color:#737373;
+  color:#ffffff;
 }
 .site-footer a:hover
 {
@@ -39,16 +42,13 @@
   list-style:none;
 
 }
-.head{
-  margin-left: 20px;
-}
 .footer-links li
 {
   display:block
 }
 .footer-links a
 {
-  color:#737373;
+  color:#ffffff;
   text-decoration: none;
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
@@ -72,7 +72,7 @@
   margin-left:6px;
   margin-right:0;
   border-radius:100%;
-  background-color:#33353d
+  background-color:#fafafb
 }
 .copyright-text
 {
@@ -117,9 +117,10 @@
 }
 .social-icons a{
   background-color:#eceeef;
-  color:#818a91;
+  color:#050505;
   font-size:16px;
   display:inline-block;
+  box-shadow : .1px .1px 5px rgb(173, 172, 172);
   line-height:44px;
   width:44px;
   height:44px;
