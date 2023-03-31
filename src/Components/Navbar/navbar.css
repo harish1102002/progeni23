@@ -137,14 +137,14 @@
       border-top: 1px solid #fff;
       border-bottom: 1px solid #fff;
       position: absolute;
-      background-color: rgba(212, 207, 207,0.5);
+      background-color: rgb(212, 207, 207);
       top: 80px;
       left: -110%;
       opacity: 1;
       transition: all 0.5s ease;
       margin-top: 0;
       padding: 0;
-      backdrop-filter: blur(30px);
+      backdrop-filter: blur(25px);
     }
   
     .nav-menu.active {
