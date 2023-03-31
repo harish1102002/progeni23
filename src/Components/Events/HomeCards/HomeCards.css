@@ -32,6 +32,7 @@
     cursor: pointer;
     background: #333;
     display: flex;
+    border-radius: 5px;
     justify-content: center;
     align-content:center;
     align-items: center;
@@ -41,6 +42,8 @@
   
   .home_card_containers .home_cards:hover .faces.face1s{
     transform: translateY(0);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
     /* box-shadow:
       inset 0 0 60px whitesmoke,
       inset 20px 0 80px #f0f,
@@ -76,6 +79,9 @@
     text-align: center;    
   }
   
+  .schedule{
+    margin: 20px 15vw;
+  }
   .home_card_containers .home_cards .faces.face1s .contents a{
      transition: .5s;
   }
@@ -83,6 +89,8 @@
   .home_card_containers .home_cards .faces.face2s{
      position: relative;
      background: whitesmoke;
+     border-bottom-right-radius: 5px;
+     border-bottom-left-radius: 5px;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -96,23 +104,22 @@
       transform: translateY(0);
   }
   
-  .home_card_containers .home_cards .faces.face2s .contents p, a{
+  .home_card_containers .home_cards .faces.face2s .contents a{
     font-size: 10pt;
     margin: 0 ;
     padding: 0;
-    color:#333;
-  }
-  
-  .home_card_containers .home_cards .faces.face2s .contents a{
     text-decoration: none;
     color: black;
     box-sizing: border-box;
     padding: 10px;
     display: inline-block;
+    border-radius: 5px;
   }
 
   .events_readmore{
-    margin-top: 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
   }
   
   .home_card_containers .home_cards .faces.face2s .contents a:hover{
@@ -149,8 +156,12 @@
   
   .home_card_containers{
     display: flex;
-    padding: 30px;
-        flex-direction: column !important;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column !important;
+  }
+  .home_card_containers .home_cards .faces{
+    width: min(90vw,300px) !important;
   }
     .home_card_containers .home_cards .faces.face1s{
       display: flex;
@@ -166,3 +177,11 @@
         padding-top: 40px;
     }
 } 
+@media(max-width: 350px){
+  .home_card_containers{
+    margin: 10px;
+  }
+  .faces{
+    width: 90vw;
+  }
+}

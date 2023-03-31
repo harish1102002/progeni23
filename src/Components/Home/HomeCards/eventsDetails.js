@@ -1,52 +1,61 @@
 const items = [
     {
       id: 1,
-      name: 'Mr.Engineer',
+      name: 'Poppins',
       image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg',
-      desc: ["Mr.engineer event can help you to enhance your placement skill.","Round 1 :(aptitude test) > Timing : 30 minutes > In round 1, Participants  have to take a aptitude test consist of 20 questions.", "Aptitude test have three sections of questions Arithmetic aptitude, Logical/Reasoning and Technical questions.","Participants who obtain maximum score can advance to the next level.","Round 2:(programming round) > Student who got passed round 1 can participate round 2. Timing: 30mins > 5 program problems are in this round.","Participants who solve maximum problem can advance to the next level.","Round 3 :(Seminar)> Student who got passed round 2 can participate round 3.","Participants are given with a technical topic. They have to give a seminar about the topic for 5minutes"]
+      desc: ["It's a Team Event of 1-4 members","Projects will be filtered out on the basis of their PPT slides sent before hand the event and the top 5 participants will stand a chance to present their project on the day of Poppins","So make sure your PPT stands out and good luck"],
+      desc1:"The Poppins event on new project ideas will showcase innovative and creative ideas for upcoming projects. The event will provide a platform for participants to share their unique perspectives and approaches to addressing real-world problems in various fields, including technology, healthcare, education, finance, and sustainability. Participants will have the chance to highlight the potential impact of their projects and discuss their feasibility, scalability, and sustainability.Overall, the Poppins event on new project ideas aims to inspire innovation, foster collaboration, and promote the development of impactful projects that can drive positive change in society"
     },
     {
       id: 2,
-      name: 'Debugging ',
+      name: 'Code++',
       image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample120.jpg',
-      desc: ["1. Round 1 will be the MCQ challenge. 15 questions will be there and need to solve that in 20 minutes"," 2. Based on the scores, shortlisted members will move to Round 2 where they need to solve 2 coding problems"]
+      desc: ["The event will be conducted on HackerRank","It is recommended that the participants should note their HackerRank login credentials 🔑 in order to attend the contest","Bring your laptops if possible 💻"],
+      desc1:"Ready to flex your coding skills 💻? If yes, then it's time to test the real programmer in you 🧑‍💻! You'll be competing against other programmers to solve problems quickly and efficiently. 🤔 So, are you ready to prove your coding prowess? 🤩 Get, Set, Code!",
     },
     {
+       
       id: 3,
-      name: 'Web Design',
+      name: 'StyleStack',
       image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample120.jpg',
-      desc:["You will be provided with an Image which you have to recreate.","Try to design it using HTML, CSS ,JS, React or any other libraries or frameworks.","Total time allotted for this event is 1 hr","You can bring your own laptop","Note: Using No code tools like Wordpress are not allowed."]
+      desc: ["Event duration will be 50 minutes and the winners are selected based on their responsive Design",""],
+      desc1:"StyleStack is perfect for anyone who wants to enhance their web design skills, from beginners to seasoned professionals. Don't miss this opportunity to take your web design skills to the next level!",
     },
     {
       id: 4,
-      name: 'PPT',
+      name: 'Gnidoc',
       image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample119.jpg',
-      desc:['One or two members per team is only allowed.',"Only technical topics should be chosen related to Computer Science.","Abstract should contain 1 to 2 pages.","PPT should contain maximum of 10 slides.","Own project ideas are also welcomed.","Time Duration : 6 to 8 minutes (6 minutes for presentation and next 2 minutes for queries)","Explanation should be in English.","Abstract must be sent to the below email id before specified date (End date : 17-04-2022).","Abstracts will be shortlisted and notified to the respected batch members on 18-04-2022.","Mail your PPT to progenit22@gmail.com","If any queries contact these numbers: Balaji Jayaraman : +91 9384575063 || Sanmathi Kumar : +91 9498828017"]
+      desc: ["This is a team event","Each team must consist of two members only","The event will be conducted in two rounds","Round 1 consists of MCQs where you have to predict the outputs of the given code snippets","10 Teams will be shortlisted to Round 2 where you have to reverse code a set of problems"],
+      desc1:"Do you like to reverse engineer things? ◀ So do we 🙌🏻 This is a team event where you'll be provided a compiled executable program. You shall provide as much inputs 🔣 as you want, analyze the outputs 🖥, predict the algorithm 🧠 and write code to implement it 🧑‍💻. Geeks and Nerds 🤓 are Invited to Decipher the Outputs 📤 and find the Code 🤔!",
     },
     {
       id: 5,
-      name: 'Googling',
+      name: 'MindFest',
       image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample119.jpg',
-      desc:["Search for information about images on the internet using the search engine Google.","Search the image in  the speed of the neuron","The Act of using Google Search engine is known colloquially as Googling. Due to the dominance of the Google search engine,to google has become a Transitive verb","Duration: 1st round - 10 minutes > 2nd round - 10 minutes.","No of image to be given : 10 for each round.","Rules: Dont use Google lens.Dont use image recognition software."]
+      desc: ["Team of 2/3 is preferable,lone wolf is also permitted","Prelims consist of 1 round and the selected teams will move on to the penultimate and the ultimate rounds"],
+      desc1:"The name indeed says that the theme  is actually a fest for your mind on the fields of entertainment like sports🏏, movies, series,music🎼and also a mixture of current affairs and interesting  facts too.. If these are your cups of tea☕ then unleash your quest in mind fest!",
     },
     {
       id: 6,
-      name: 'Marketing',
+      name: 'Mystery Chase',
       image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample119.jpg',
-      desc:['You can choose any product or brand and advertise them, The content should be formal, The duration is between 3 to 5 mins']
+      desc: ["10 teams are allowed to play this game and the teams will be formed on the basis of FCFS"],
+      desc1:["Ahoy!!! Like how ferocious sea pirates hunt for hidden treasure in the sea,  This is a game where people form a group and explore the given area in search of treasure 💰💎 ,using written directions or clues"],
     },
     {
       id: 7,
-      name: 'Photography',
+      name: 'MemeBuzz',
       image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample119.jpg',
-      desc:["Photography is the art, application, and practice of creating durable images by recording light either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film.","Photo should be taken by yourself","Send your photo and your details to our Mail/Whatsapp/Instapage is given below.","Editing not permitted.","From 12th April to 19th April.","Result will announce on 20th April."]
+      desc: ["Just Meme it"],
+      desc1:"What are U looking for its just our best passtime just meme it!",
     }
     ,
     {
       id: 8,
-      name: 'connections',
+      name: 'GameScape',
       image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample119.jpg',
-      desc:["A connection game is a type of abstract strategy game in which players attempt to complete a specific type of connection with their pieces.","This could involve forming a path between two or more endpoints, completing a closed loop, or connecting all of ones pieces so they are adjacent to each other.","Connection games are activities meant to encourage interactions and help build bonds among players.","Examples games include personal trivia, photo challenges, and mingle Bingo.Open up your mind to stay connected with an eye to procure knowledge !!!"]
+      desc: ["Individual Game Event"],
+      desc1:"Join us for an exciting tournament of the popular mobile game, Stumble Guys! Race, jump, and dodge your way to the finish line in this fun and competitive game. Don't miss out on the action!",
     }
   ]
 

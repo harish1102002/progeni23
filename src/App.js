@@ -1,6 +1,7 @@
 import './App.css';
 import {BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Components/Home/Home";
+import Login from "./Components/login";
 import Navbar from "./Components/Navbar/navbar";
 import About from "./Components/About/About";
 import Footer from './Components/Footer/Footer';
@@ -18,9 +19,8 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/events" element={<Events/>} />
           <Route path="/event/:id" element={<EventDetails/>} />
-          <Route path="/register"  element={<Register/>}>
-               
-          </Route>
+          <Route path="/register"  element={<Register/>}/>
+          <Route path="/login" element={<Login/>} />     
           <Route path="/about-us" element={<About/>} />
           <Route path="/contact-us" element={<Contact/>} />
         </Routes>

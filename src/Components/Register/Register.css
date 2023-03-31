@@ -16,6 +16,30 @@
   margin-left: auto;
   margin-right: auto;
 }
+.fl2,.fl4{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.fl3{
+  display: flex;
+  height: 40vh;
+  width: 35vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.note{
+  display: flex;
+  flex-direction: column;
+  min-height: 170px;
+  justify-content: space-around;
+}
+.im{
+  width: 30vh;
+  margin-top: 20px;
+  height: 30vh;
+}
 .register_container .title{
   font-size: 25px;
   font-weight: 500;
@@ -30,6 +54,16 @@
   width: 30px;
   border-radius: 5px;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.fl{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.fl2 span{
+  color: rgb(3, 3, 90);
+  font-weight: 600;
 }
 .content form .user-details{
   display: flex;
@@ -68,12 +102,14 @@ form .input-box span.details{
  }
  form .category{
    display: flex;
+   flex-direction: column;
    width: 80%;
    margin: 14px 0 ;
    justify-content: space-between;
  }
  form .category label{
    display: flex;
+   width: 150px;
    align-items: center;
    cursor: pointer;
  }
@@ -89,18 +125,22 @@ form .input-box span.details{
  #dot-1:checked ~ .category label .one,
  #dot-2:checked ~ .category label .two,
  #dot-3:checked ~ .category label .three,
- #dot-4:checked ~ .category label .four
- /* #dot-5:checked ~ .catogory label .five */
+ #dot-4:checked ~ .category label .four,
+ #dot-5:checked ~ .category label .five,
+ #dot-6:checked ~ .category label .six,
+ #dot-7:checked ~ .category label .seven,
+ #dot-8:checked ~ .category label .eight
+ 
  {
    background: #9b59b6;
    border-color: #d9d9d9;
  }
- form input[type="radio"]{
+ form input[type="checkbox"],form input[type="radio"]{
    display: none;
  }
  form .button{
    height: 45px;
-   margin: 35px 0
+   margin: 10px 0
  }
  form .button button{
    height: 100%;
@@ -118,6 +158,26 @@ form .input-box span.details{
  form .button button:hover{
   /* transform: scale(0.99); */
   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  }
+  form .user-details .full{
+    width: 99%;
+  }
+  .login{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  }
+  .user{
+    margin: 19.2px 5px;
+  }
+  .pid{
+    color: green;
+  }
+  @media(max-width: 1040px){
+    .fl2{
+      flex-direction: column;
+    }
   }
  @media(max-width: 584px){
  .register_container{
@@ -140,6 +200,9 @@ form .user-details .input-box{
   }
   }
   @media(max-width: 459px){
+    .fl4{
+      flex-direction: column;
+    }
   .register_container .content .category{
     flex-direction: column;
   }
@@ -167,13 +230,14 @@ form .user-details .input-box{
 
 .register_pay{
   margin-top: 50px;
+  margin-left: 10px;
 }
 
 .upi_id{
   margin: 16px 0;
 }
 
-.register_pay > span{
+.note span{
   color: red;
   font-weight: 500;
 }
@@ -242,6 +306,13 @@ form .user-details .input-box{
     height: 300px;
     animation: move 10s infinite alternate;
   }
+  .button{
+    width: 90%;
+    margin: 0;
+  }
+  .user-details{
+    width: 90%;
+  }
 
   @-webkit-keyframes move {
     from {
@@ -265,5 +336,23 @@ form .user-details .input-box{
       transform: translate(0px, 400px) rotate(-10deg);
       border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
     }
+  }
+}
+
+@media(max-width: 750px){
+  .fl{
+    flex-direction: column;
+  }
+  .button{
+    width: 80%;
+    margin: 0;
+  }
+  .user-details{
+    width: 80%;
+  }
+}
+@media(max-width: 400px) {
+  .button{
+    width: 73.5%;
   }
 }

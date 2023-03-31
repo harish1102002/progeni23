@@ -7,16 +7,12 @@ const ContactInfo = () => {
 
     const icons = [
         {
-            name:"facebook",
-            link:"https://instagram.com/progenit22?igshid=YmMyMTA2M2Y="
-        },
-        {
             name:"insta",
-            link:"https://instagram.com/progenit22?igshid=YmMyMTA2M2Y="
+            link:"https://instagram.com/progenit23"
         },
         {
             name:"mail",
-            link:"mailto:progenit22@gmail.com"
+            link:"mailto:gcecseprogeni@gmail.com"
         }
     ];
 
@@ -29,20 +25,14 @@ const ContactInfo = () => {
 
             <div className="contact_details_container">
                 <h2>Student Co-Ordinator</h2>
-                <div className="contact_details" style={{margin:"18px 0px"}}>
-                    <img src={phone} alt="phone" id="contact_phone_image"/>
-                   <div className="number">
-                    
-                    <div className="contact_number_student">
-                    <div>+91 6374 606 808,</div>
-                    <div>(Yeswanthraghul)</div>
-                    </div>
-
-                   </div>
+                <div className="contact_details" style={{margin:"15px 3px"}}>
+                    <img src={phone} alt="phone" id="contact_phone_image"/>    
+                    <div>6382111690</div>
                 </div>
+                <div className="harry">Harry</div>
                 <div className="contact_details">
                     <img src={email} alt="phone" />
-                    <span>progenit22@gmail.com</span>
+                    <span>gcecseprogeni@gmail.com</span>
                 </div>
                 <div className="contact_details">
                     <img src={location} alt="phone" />

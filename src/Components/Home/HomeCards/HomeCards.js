@@ -6,47 +6,39 @@ const HomeCards = () => {
 
     const techEvents = [
         {
-            name:"Mr.Engineer",
-            short:"Project your skills extend your knowledge break the limits and design the unimaginable🤟",
-            icon:"fas fa-cogs"
+            name:"Poppins",
+            icon:"fas fa-file-powerpoint"
         },
         {
-            name:"Code Debugging",
-            short:"Bugs are the best fuel for a true coder they shape you into the inevitable🤙",
-            icon:"fas fa-bug"
+            name:"Code++",
+            icon:"fas fa-solid fa-file-code"
         },
         {
-            name:"Web Designing",
-            short:"Lets design the most magnificient pages to induce traffic and provide services🙌",
+            name:"StyleStack",
             icon:"fas fa-code"
         },
         {
-            name:"PPT",
-            short:"Everything begins with an idea express your marvelous ideas and lets work it out together👊",
-            icon:"fas fa-file-powerpoint"
+            name:"Gnidoc",
+            icon:"fas fa-terminal"
         }
     ]
 
     const nonTechEvents = [
         {
-            name:"Googling",
-            short:"Google is something more than a search engine show off your googling skills and find modern solutions🤘",
-            icon:"fab fa-google"
+            name:"MindFest",
+            icon:"fas fa-brain"
         },
         {
-            name:"Marketing",
-            short:"The world is full of ads reveal your new marketing strategies to eliminate these exasperating strategies👊",
-            icon:"fas fa-chart-bar"
+            name:"Mystery Chase",
+            icon:"fas fa-gem"
         },
         {
-            name:"Photography",
-            short:"Photographs capture those exciting moments that are gone forever, impossible to recreate🤙",
+            name:"MemeBuzz",
             icon:"fas fa-photo-video"
         },
         {
-            name:"Connection",
-            short:"Show case your logical connecting skills and resurge your memory to find solutions for this amazing event🙌",
-            icon:"fas fa-network-wired"
+            name:"GameScape",
+            icon:"fas fa-gamepad"
         },
     ]
 
@@ -68,7 +60,6 @@ const HomeCards = () => {
                         </div>
                         <div className="face face2">
                             <div className="content">
-                            <p>{techEvent.short}</p>
                             <button className="events_readmore"><Link to={`/event/${index+1}`} state={items}>Read More</Link></button> 
                             </div>
                         </div>

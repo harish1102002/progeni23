@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/progeni-server
 /.pnp
 .pnp.js
 

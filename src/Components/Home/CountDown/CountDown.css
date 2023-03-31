@@ -1,7 +1,7 @@
 .days_left{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    column-gap: 8px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 .closed{
         text-align: center;
@@ -29,7 +29,7 @@
 
 .timer_box{
         position: relative;
-        margin: 10px;
+        margin: 10px 1rem;
         background-color: transparent;
         padding: 8px;
         width: 90px;
@@ -137,10 +137,9 @@
   @media(max-width:1023px){
         .days_left{
                 font-size: 18px;
-                column-gap: 4px;
         }
         .timer_box{
-                width: 62px;
+                width: 65px;
                 font-size: 18px;
                 margin: 5px;
                 padding: 6px;
@@ -154,5 +153,10 @@
                 padding-left: 8px;
                 margin: 12px 0;
                 margin-top: 40px;
+        }
+  }
+  @media(max-width:430px){
+        .timer_box{
+                background-color: rgb(62, 62, 62);
         }
   }

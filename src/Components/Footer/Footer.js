@@ -16,12 +16,12 @@ function Footer()
             <div className="col-xs-6 col-md-3">
               <h6 className='head'>Events</h6>
               <ul className="footer-links">
-                <li>Mr.Engineer</li>
-                <li>PPT</li>
-                <li>Code Debugging</li>
-                <li>Web Designing</li>
-                <li>Googling</li>
-                <li>Marketing</li>
+                <li>Poppins</li>
+                <li>Code++</li>
+                <li>Gnidoc</li>
+                <li>StyleStack</li>
+                <li>MysteryChase</li>
+                <li>MindFest</li>
               </ul>
             </div>
   
@@ -47,9 +47,9 @@ function Footer()
   
             <div className="col-md-4 col-sm-6 col-xs-12">
               <ul className="social-icons">
-                <li><a className="facebook" href="https://instagram.com/progenit22?igshid=YmMyMTA2M2Y=" target="_blank" rel="noreferrer"><i className="fa fa-instagram"></i></a></li>
-                <li><a className="twitter" href="mailto:progenit22@gmail.com" target="_blank" rel="noreferrer"><i className="fa fa-envelope"></i></a></li>
-                <li><a className="dribbble" href="https://wa.me/919047067413" target="_blank" rel="noreferrer"><i className="fa fa-whatsapp" ></i></a></li>
+                <li><a className="facebook" href="https://instagram.com/progenit23" target="_blank" rel="noreferrer"><i className="fa fa-instagram"></i></a></li>
+                <li><a className="twitter" href="mailto:gcecseprogeni@gmail.com" target="_blank" rel="noreferrer"><i className="fa fa-envelope"></i></a></li>
+                <li><a className="dribbble" href="https://wa.me/919361415123" target="_blank" rel="noreferrer"><i className="fa fa-whatsapp" ></i></a></li>
               </ul>
             </div>
           </div>

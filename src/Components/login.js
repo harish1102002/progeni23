@@ -1,0 +1,71 @@
+import { useState, useEffect } from "react";
+import { toast,Toaster } from "react-hot-toast";
+import "./Register/Register.css";
+
+const Login = () => {
+  const [p, setp] = useState([]);
+  const [d, setd] = useState([]);
+  const [v, setv] = useState(false);
+  const site="https://progeni-server.onrender.com/";
+
+  useEffect(() => {
+    fetch(site)
+      .then((j) => j.json())
+      .then((j) => setp(j));
+  }, []);
+
+  const RegisterFormHandler = async (e) => {
+    e.preventDefault();
+    let y = document.getElementsByTagName("input")[0].value,x = p.slice(),z=0;
+    x.forEach((e)=>{
+        if(e.email==y)
+        {setd(e);
+        setv(true);
+        z=1;}
+    })
+    if(z==0)
+    toast.error("Wrong Credentials")
+    else
+    toast.success("Login Successfull");
+  };
+
+  return (
+    <div className="register_container">
+    <Toaster/>
+      {!v && (
+        <div className="registration_form">
+          <div className="title">Login</div>
+          <div className="content">
+            <form onSubmit={RegisterFormHandler}>
+              <div className="user-details">
+                <div className="input-box full">
+                  <span className="details">Email</span>
+                  <input type="text" placeholder="Enter your email" required />
+                </div>
+              </div>
+              <div className="button">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+      {v && (
+        <div className="registration_form">
+          <div className="title">Login Successfull</div>
+          <div className="content">
+            <form onSubmit={RegisterFormHandler}>
+              <div className="login">
+              <span className="user">Hi {d.name}</span>
+              <span className="pid">Your Progeni Id</span>
+              <span className="user">{d.id}</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Login;

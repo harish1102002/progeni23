@@ -36,7 +36,7 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    height : 90vh;
+    height : 89.5vh;
   }
   
   .hero h2{
@@ -69,7 +69,7 @@
     text-align: justify;
   }
   .motion-text{
-    background: linear-gradient(135deg,rgb(1, 123, 148),rgb(102, 0, 102),rgb(254, 252, 254),rgb(101, 0, 124));
+    background: linear-gradient(135deg,rgb(1, 123, 148),rgb(104, 103, 104),rgb(198, 196, 198),rgb(74, 72, 74));
     background-clip: text;
     color: transparent;
     font-weight: 1000;
@@ -214,5 +214,13 @@
     .hero{
         flex-direction: column;
         justify-content: inherit;
+    }
+    .content{
+      width: 100vw;
+    }
+  }
+  @media(max-width:353px){
+    .hero p{
+      font-size: 13px;
     }
   }

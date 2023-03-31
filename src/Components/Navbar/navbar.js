@@ -1,11 +1,12 @@
 import "./navbar.css";
-import {useState} from "react";
+import {useState,useEffect} from "react";
 import { NavLink } from "react-router-dom";
 import progeni_logo from "../../Images/progeni_logo.png";
 import { Link } from "react-router-dom";
 function NavBar(props) {
 
   const [click, setClick] = useState(false);
+  const [post,setp]=useState([]);
 
   const handleClick = () => setClick(!click);
   const Close = () => setClick(false);
@@ -57,17 +58,6 @@ function NavBar(props) {
               </NavLink>
             </li>
 
-            {/* <li className="nav-item">
-              <NavLink
-                to="/previous-synergy"
-                activeclassname="active"
-                className="nav-links"
-               onClick={click ? handleClick : null}
-              >
-                Memories
-              </NavLink>
-            </li> */}
-
             <li className="nav-item">
             <NavLink   
               to="/about-us"
@@ -87,6 +77,17 @@ function NavBar(props) {
                 onClick={click ? handleClick : null}
               >
                 Contact
+              </NavLink>
+            </li>
+            
+            <li className="nav-item">
+              <NavLink
+                to="/login"
+                activeclassname="active"
+                className="nav-links"
+               onClick={click ? handleClick : null}
+              >
+                login
               </NavLink>
             </li>
           </ul>

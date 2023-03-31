@@ -1,6 +1,7 @@
 .contact_details{
     margin: 35px 0;
     display: flex;
+    align-items: center;
 }
 .contact_details > img{
     width: 3.5%;
@@ -8,9 +9,11 @@
 }
 
 #contact_phone_image{
-    margin-top: -18px
+    margin-top: -3px
 }
-
+.harry{
+    margin-left: 2rem;
+}
 .contact_social{
     width: 25px;
     height: 25px;
@@ -35,7 +38,7 @@
 .contact_info{
     display: grid;
     grid-template-columns: auto;
-    background: linear-gradient(90deg,#f702e2,#f726fb,#fe66dd,#fffbfe);
+    background: linear-gradient(90deg,#a1a1a1,#9b9b9b,#c7c7c7,#fffdff);
     padding: 25px;
 }
 .contact_social:hover{

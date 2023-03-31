@@ -1,6 +1,6 @@
 import React from 'react';
 import './EventDetails.css';
- import { useLocation,useParams } from 'react-router-dom';
+import { useLocation,useParams } from 'react-router-dom';
 
 export default function EventDetails(props) {
 
@@ -18,6 +18,10 @@ export default function EventDetails(props) {
     <div>
       <div className="event_details">
         <h1>{ findBlog.name}</h1>
+        <label className='desc'>DESCRIPTION</label>
+        <ul>
+        {findBlog.desc1}
+        </ul>
         <label className='desc'>GUIDELINES</label>
         <ul>
         {

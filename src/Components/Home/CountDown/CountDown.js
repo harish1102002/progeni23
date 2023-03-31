@@ -2,7 +2,7 @@ import Countdown from "react-countdown";
 import "./CountDown.css";
 const CountDown = ()=>{
 
-    const end = new Date(2022,3,17);
+    const end = new Date(2023,3,12);
     const Completionist = () => <div className="closed">Registration closed!</div>;
 
     const renderer = ({ days,hours, minutes, seconds, completed }) => {
