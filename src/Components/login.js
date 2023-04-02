@@ -56,10 +56,11 @@ const Login = () => {
           <div className="content">
             <form onSubmit={RegisterFormHandler}>
               <div className="login">
-              <span className="user">Hi {d.name}, your EmailId : {d.email}</span>
+              <span className="user">Hi {d.name}</span>
+              <span className="user">{d.email}</span>
               <span className="pid">Your Progeni Id</span>
               <span className="user">{d.id}</span>
-              <span className="user">Transaction Status : {(d.ts=="Not Paid")?<span style={{"color":"red"}}>{d.ts}</span>:((d.ts=="Paid")?<span style={{"color":"green"}}>{d.ts}</span>:d.ts)}</span>
+              <span className="user">Transaction Status : {(d.ts=="Not Paid")?<span style={{"color":"red"}}>{d.ts}</span>:((d.ts=="Paid")?<span style={{"color":"green"}}>{d.ts}</span>:<span style={{"color":"yellow"}}>{d.ts}</span>)}</span>
               </div>
             </form>
           </div>

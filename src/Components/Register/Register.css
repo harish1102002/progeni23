@@ -143,9 +143,11 @@ form .input-box span.details{
   }
   .user{
     margin: 12px 5px;
+    text-align: center;
   }
   .pid{
     color: green;
+    text-align: center;
   }
   @media(max-width: 1040px){
     .fl2{
