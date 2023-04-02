@@ -141,11 +141,13 @@ form .input-box span.details{
   justify-content: space-around;
   align-items: center;
   word-wrap: break-word;
+  word-break: break-all;
   }
   .user{
     margin: 12px 0;
     text-align: center;
     word-wrap: break-word;
+    word-break: break-all;
   }
   .pid{
     color: green;
