@@ -14,13 +14,13 @@ const Ad =()=>{
         fetch(site,{
           method:"POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({id:v.value.trim()})
+          body: JSON.stringify({id:"#P23"+v.value.trim()})
         }).then((j)=>j.json()).then((j)=>{
             toast.success("Updated Successfully");v.value="";})
     }
 
     return(
-        <><br/><Toaster/><br/><br/><input/>
+        <><br/><Toaster/><br/><p>Last 5 digits of progeni id:</p><br/><input/>
         <button onClick={sub}>submit</button><br/></>
     )
 }

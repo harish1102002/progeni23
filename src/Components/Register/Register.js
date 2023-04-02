@@ -40,20 +40,22 @@ const Register = ()=>{
   }
   const transidChangeHandler = (e)=>{
     settransid(e.target.value);
-    if(e.target.value.trim()=="")
-    setts("Not Paid");
-    else
-    setts("Your Payment is being Verified, we will update you in mail within 24hrs.")
   }
 
   const RegisterFormHandler = async(e)=>{
 
     e.preventDefault();
 
-    let pp=p.slice(),zz=0;
+    let pp=p.slice(),zz=0,ts="";
+
+    if(transid.trim()=="")
+    ts="Not Paid";
+    else
+    ts="Your Payment is being Verified, we will update you in mail within 24hrs."
+
     pp.forEach((e)=>{if(e.email==email)zz=1});
     if(zz==1)
-    {toast.error("Email Already Registered");return}
+    {toast.error("Email Already Registered, Login in Account Tab");return}
     
     const uniqueId = 2300000+n*100+Math.floor(Math.random()*100);
 
