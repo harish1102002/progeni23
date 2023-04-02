@@ -140,10 +140,12 @@ form .input-box span.details{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  word-wrap: break-word;
   }
   .user{
-    margin: 12px 5px;
+    margin: 12px 0;
     text-align: center;
+    word-wrap: break-word;
   }
   .pid{
     color: green;
