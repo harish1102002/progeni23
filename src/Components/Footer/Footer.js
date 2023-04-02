@@ -49,7 +49,7 @@ function Footer()
               <ul className="social-icons">
                 <li><a className="facebook" href="https://instagram.com/progenit23" target="_blank" rel="noreferrer"><i className="fa fa-instagram"></i></a></li>
                 <li><a className="twitter" href="mailto:gcecseprogeni@gmail.com" target="_blank" rel="noreferrer"><i className="fa fa-envelope"></i></a></li>
-                <li><a className="dribbble" href="https://wa.me/919361415123" target="_blank" rel="noreferrer"><i className="fa fa-whatsapp" ></i></a></li>
+                <li><a className="dribbble" href="https://wa.me/919487431671" target="_blank" rel="noreferrer"><i className="fa fa-whatsapp" ></i></a></li>
               </ul>
             </div>
           </div>
