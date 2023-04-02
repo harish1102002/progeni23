@@ -145,7 +145,7 @@
       transition: all 0.5s ease;
       margin-top: 0;
       padding: 0;
-      backdrop-filter: blur(25px);
+      backdrop-filter: blur(20px);
     }
   
     .nav-menu.active {
