@@ -5,6 +5,11 @@
     padding: 0px;
 }
 
+.at{
+  font-size: 16px;
+  color: purple;
+  font-weight: 600;
+}
 .points:not(:last-child){
   margin-bottom:8px;
 }

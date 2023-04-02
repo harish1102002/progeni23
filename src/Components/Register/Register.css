@@ -55,11 +55,6 @@
   border-radius: 5px;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
-.fl{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 .fl2 span{
   color: rgb(3, 3, 90);
   font-weight: 600;
@@ -95,10 +90,6 @@ form .input-box span.details{
 .user-details .input-box input:valid{
   border-color: #9b59b6;
 }
- form .gender-details .gender-title{
-  font-size: 20px;
-  font-weight: 500;
- }
  form .category{
    display: flex;
    flex-direction: column;
@@ -121,25 +112,9 @@ form .input-box span.details{
   border: 5px solid transparent;
   transition: all 0.3s ease;
 }
- #dot-1:checked ~ .category label .one,
- #dot-2:checked ~ .category label .two,
- #dot-3:checked ~ .category label .three,
- #dot-4:checked ~ .category label .four,
- #dot-5:checked ~ .category label .five,
- #dot-6:checked ~ .category label .six,
- #dot-7:checked ~ .category label .seven,
- #dot-8:checked ~ .category label .eight
- 
- {
-   background: #9b59b6;
-   border-color: #d9d9d9;
- }
- form input[type="checkbox"],form input[type="radio"]{
-   display: none;
- }
  form .button{
    height: 45px;
-   margin: 10px 0
+   margin: 30px 0
  }
  form .button button{
    height: 100%;
@@ -155,7 +130,6 @@ form .input-box span.details{
    background: linear-gradient(135deg, #71b7e6, #9b59b6);
  }
  form .button button:hover{
-  /* transform: scale(0.99); */
   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
   }
   form .user-details .full{
@@ -168,7 +142,7 @@ form .input-box span.details{
   align-items: center;
   }
   .user{
-    margin: 19.2px 5px;
+    margin: 12px 5px;
   }
   .pid{
     color: green;
@@ -228,8 +202,8 @@ form .user-details .input-box{
 }
 
 .register_pay{
-  margin-top: 50px;
-  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .upi_id{

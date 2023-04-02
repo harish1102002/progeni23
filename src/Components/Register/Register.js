@@ -1,19 +1,23 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Register.css";
 import { toast,Toaster } from "react-hot-toast";
-import axios from "axios";
 import Thanks from "./Thanks";
 import { PulseLoader } from "react-spinners";
 import RegisterPay from "./RegisterPay";
+import emailjs from '@emailjs/browser';
 
 const Register = ()=>{
 
+  const form = useRef();
+  const [p,setp]  = useState("");
+  const [n,setn]  = useState("");
   const [name,setName]  = useState("");
   const [email,setEmail] = useState("");
   const [phn,setPhn] = useState("");
   const [clg,setClg] = useState("");
   const [year,setyear] = useState("");
   const [transid,settransid] = useState("");
+  const [ts,setts] = useState("");
   const [thanks,setThanks] = useState(false);
   const [studentInfo,setStudentInfo] = useState({});
   let [loading, setLoading] = useState(false);
@@ -36,57 +40,75 @@ const Register = ()=>{
   }
   const transidChangeHandler = (e)=>{
     settransid(e.target.value);
+    if(e.target.value.trim()=="")
+    setts("Not Paid");
+    else
+    setts("Your Payment is being Verified, we will update you in mail within 24hrs.")
   }
 
   const RegisterFormHandler = async(e)=>{
 
     e.preventDefault();
 
-    const uniqueId = Math.floor(Math.random()*90000) + 10000;
+    let pp=p.slice(),zz=0;
+    pp.forEach((e)=>{if(e.email==email)zz=1});
+    if(zz==1)
+    {toast.error("Email Already Registered");return}
+    
+    const uniqueId = 2300000+n*100+Math.floor(Math.random()*100);
 
-    setStudentInfo({id:uniqueId,email});
-
-    const event=[]
-    let y=document.getElementsByClassName("check")
-
-    for(let i=0;i<y.length;i++)
-      event.push(y[i].checked);
+    setStudentInfo({id:uniqueId,email,transid,name,ts});
 
     const details = {
-        id:"PROGENI-"+uniqueId,
+        id:"#P"+uniqueId,
         name,
         email,
         phn,
         clg,
         year,
         transid,
-        event,
+        ts
     }
 
     setLoading(true);
 
-    const mailData = {
-        to : email,
-        subject:"Registered for Progeni Events",
-        text: "PROGENI-"+uniqueId,
-        userDetails:details
-    }
+    emailjs.sendForm('service_2qpw1h8', 'template_bmk1ddl', form.current, 'ovDE8AEcF65leEhNr')
+      .then((result) => {}, (error) => {
+          toast.error('error in sending mail');
+      });
+    emailjs.send('service_u68kfjs', 'template_bj0uuox', details, 'nXXhvd-z7kWl4fDml')
+    .then((result) => {}, (error) => {
+        toast.error('error in sending mail');
+    });
+    
 
     fetch(site,{
       method:"POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({post:details})
-    }).then((j)=>{
-      toast.success("Registered Successfull");
+    }).then((j)=>j.json()).then((j)=>{
+      toast.success("Registered Successfully");
       window.setTimeout(()=>{
         setThanks(true);
       },3000);
       setLoading(false);})
-  }
 
+      setName("");
+      setEmail("");setPhn("");
+      setyear("");setClg("");
+      settransid("");
+  }
+  useEffect(()=>{
+    setn(p.length+1);
+  },[p])
+
+  useEffect(()=>{
+    fetch(site).then((j)=>j.json()).then((j)=>setp(j));
+  },[])
 
 return(  
     <div className="register_container">
+    <RegisterPay/>
       {
         thanks ? <Thanks studentAbstract={studentInfo}/> :
      <div className="registration_form"> 
@@ -95,88 +117,39 @@ return(
     
     <div className="content">
       
-      <form onSubmit={RegisterFormHandler}>
+      <form onSubmit={RegisterFormHandler} ref={form}>
         <div className="user-details">
 
           <div className="input-box">
             <span className="details">Full Name</span>
-            <input type="text" placeholder="Enter your name" value={name} onChange={nameChangeHandler} required />
+            <input type="text" placeholder="Enter your name" value={name} name="n" onChange={nameChangeHandler} required />
           </div>
           
           <div className="input-box">
             <span className="details">Email</span>
-            <input type="text" placeholder="Enter your email" value={email} onChange={emailChangeHandler} required />
+            <input type="text" placeholder="Enter your email" value={email} name="e" onChange={emailChangeHandler} required />
           </div>
 
           <div className="input-box">
             <span className="details">Phone Number</span>
-            <input type="tel" placeholder="Enter your number" value={phn} onChange={phnChangeHandler} required />
+            <input type="tel" placeholder="Enter your number" value={phn} name="p" onChange={phnChangeHandler} required />
           </div>
 
           <div className="input-box">
             <span className="details">College</span>
-            <input type="text" placeholder="Enter your college name" value={clg} onChange={clgChangeHandler} required />
+            <input type="text" placeholder="Enter your college name" value={clg} name="c" onChange={clgChangeHandler} required />
           </div>
 
           <div className="input-box">
             <span className="details">Year</span>
-            <input type="text" placeholder="pursuing year" value={year} onChange={yearChangeHandler} required />
+            <input type="text" placeholder="pursuing year" value={year} name="y" onChange={yearChangeHandler} required />
           </div>
 
           <div className="input-box">
             <span className="details">Transaction Id (optional)</span>
-            <input type="text" placeholder="transaction_id" value={transid} onChange={transidChangeHandler}  />
+            <input type="text" placeholder="transaction_id" value={transid} name="t" onChange={transidChangeHandler}  />
           </div>
 
-        </div>
-
-        <div className="gender-details">
-          <span className="gender-title">Select Event</span>
-          <input type="checkbox" name="gender" id="dot-1" className="check"/>
-          <input type="radio" name="gender" id="dot-2" className="check"/>
-          <input type="radio" name="gender" id="dot-3" className="check"/>
-          <input type="checkbox" name="gender" id="dot-4" className="check"/>
-          <input type="checkbox" name="gender" id="dot-5" className="check"/>
-          <input type="checkbox" name="gender" id="dot-6" className="check"/>
-          <input type="checkbox" name="gender" id="dot-7" className="check"/>
-          <input type="checkbox" name="gender" id="dot-8" className="check"/>
-          <div className="category">
-            <div className="fl">
-            <label htmlFor="dot-1" >
-              <span className="dot one"></span>
-              <span className="gender">Hack Shop</span>
-            </label>
-            <label htmlFor="dot-2" >
-              <span className="dot two"></span>
-              <span className="gender">Code++</span>
-            </label>
-            <label htmlFor="dot-3" >
-              <span className="dot three"></span>
-              <span className="gender">StyleStack</span>
-            </label>               
-            <label htmlFor="dot-4" >
-              <span className="dot four"></span>
-              <span className="gender">Gnidoc</span>
-            </label></div>
-            <br /><br/><div className="fl">  
-            <label htmlFor="dot-5" >
-              <span className="dot five"></span>
-              <span className="gender">MindFest</span>
-            </label>
-            <label htmlFor="dot-6" >
-              <span className="dot six"></span>
-              <span className="gender">Mystery Chase</span>
-            </label>            
-            <label htmlFor="dot-7" >
-              <span className="dot seven"></span>
-              <span className="gender">GameScape</span>
-            </label>
-            <label htmlFor="dot-8" >
-              <span className="dot eight"></span>
-              <span className="gender">MemeBuzz</span>
-            </label></div>               
-          </div>
-          <br />
         </div>
 
         <div className="button">
@@ -187,7 +160,6 @@ return(
     </div>
     <div className="blob"></div> 
     </div>}
-    <RegisterPay/>
   </div>
 );
 }

@@ -10,7 +10,9 @@ import EventDetails from './Components/Events/EventDetails';
 import Register from './Components/Register/Register';
 import Contact from './Components/Contact/contact';
 import ScrollToTop from './Components/ScrollToTop';
+import Ad from "./Components/admin"
 function App() {
+  const r="/phd/admin3";
   return (
       <Router>
         <Navbar/>
@@ -23,6 +25,7 @@ function App() {
           <Route path="/login" element={<Login/>} />     
           <Route path="/about-us" element={<About/>} />
           <Route path="/contact-us" element={<Contact/>} />
+          <Route path={r} element={<Ad/>} />
         </Routes>
         <Footer/>
       </Router>

@@ -56,9 +56,9 @@ const Login = () => {
           <div className="content">
             <form onSubmit={RegisterFormHandler}>
               <div className="login">
-              <span className="user">Hi {d.name}</span>
+              <span className="user">Hi {d.name}, your EmailId : {d.email}</span>
               <span className="pid">Your Progeni Id</span>
-              <span className="user">{d.id}</span>
+              <span className="user">{d.id}</span><span className="user">Transaction Status : {d.ts}</span>
               </div>
             </form>
           </div>

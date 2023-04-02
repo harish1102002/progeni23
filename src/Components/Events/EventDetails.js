@@ -26,7 +26,7 @@ export default function EventDetails(props) {
         <ul>
         {
           findBlog.desc.map((points,index)=>( 
-              <li className='points' key={index}>{points}</li>
+              <li className='points' key={index}>{(Number(id)==1&&index==1)?<a className="at" href="https://forms.gle/ENpA2ES7WvFMUwij7">POPPINS FORM LINK</a>:((Number(id)==7&&index==5)?(<a className="at" href="https://forms.gle/vEsuYG9c79ubsBc78">MEMEBUZZ FORM LINK</a>):points)}</li>
           ))
         }
         </ul>

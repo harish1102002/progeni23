@@ -117,9 +117,15 @@
     box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
   }
   
+@media(max-width:1310px){
+  .home_card_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }}
 @media(max-width:993px){
     .home_card_container{
         padding: 20px;
+        display: flex;
         align-items: center;
         overflow: auto;
         justify-content: inherit;

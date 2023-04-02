@@ -21,7 +21,7 @@ function NavBar(props) {
 
           <div className="nav-logo">
             <Link to="/"><img className="logo" src={progeni_logo} alt="progeni" /></Link>
-            <h5 className="heading">PROGENI ..</h5>
+            <h5 className="heading">PROGEN' I</h5>
           </div>
           
           <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -33,6 +33,17 @@ function NavBar(props) {
                 onClick={click ? handleClick : null}
               >
                 Home
+              </NavLink>
+            </li>
+            
+            <li className="nav-item">
+              <NavLink
+                to="/login"
+                activeclassname="active"
+                className="nav-links"
+               onClick={click ? handleClick : null}
+              >
+                Account
               </NavLink>
             </li>
 
@@ -77,17 +88,6 @@ function NavBar(props) {
                 onClick={click ? handleClick : null}
               >
                 Contact
-              </NavLink>
-            </li>
-            
-            <li className="nav-item">
-              <NavLink
-                to="/login"
-                activeclassname="active"
-                className="nav-links"
-               onClick={click ? handleClick : null}
-              >
-                login
               </NavLink>
             </li>
           </ul>
