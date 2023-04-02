@@ -54,7 +54,7 @@ const Register = ()=>{
 
     pp.forEach((e)=>{if(e.email==email)zz=1});
     if(zz==1)
-    {toast.error("Email Already Registered, Login in Account Tab");return}
+    {toast.error("Email Already Registered, Please Login from Account Tab");return}
     
     const uniqueId = 2300000+n*100+Math.floor(Math.random()*100);
 
