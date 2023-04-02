@@ -17,7 +17,6 @@ const Register = ()=>{
   const [clg,setClg] = useState("");
   const [year,setyear] = useState("");
   const [transid,settransid] = useState("");
-  const [ts,setts] = useState("");
   const [thanks,setThanks] = useState(false);
   const [studentInfo,setStudentInfo] = useState({});
   let [loading, setLoading] = useState(false);
