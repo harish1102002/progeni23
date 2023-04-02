@@ -140,26 +140,18 @@ form .input-box span.details{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  word-wrap: break-word;
-  word-break: break-all;
-  white-space: pre-wrap;
   }
   .user{
     margin: 12px 0;
     text-align: center;
-    word-wrap: break-word;
-    white-space: pre-wrap;
-    word-break: break-all;
   }
   .pid{
     color: green;
     text-align: center;
   }
   .content2{
-    margin-left: -30px; 
-    word-wrap: break-word;
-    white-space: pre-wrap;
-    word-break: break-all;
+    margin-left: -30px;
+    width: 70%;
   }
   @media(max-width: 1040px){
     .fl2{
