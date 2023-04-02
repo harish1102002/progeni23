@@ -150,8 +150,8 @@ form .input-box span.details{
     text-align: center;
   }
   .content2{
-    margin-left: -30px;
-    width: 70%;
+    margin-left: 0;
+    width: 100%;
   }
   @media(max-width: 1040px){
     .fl2{
