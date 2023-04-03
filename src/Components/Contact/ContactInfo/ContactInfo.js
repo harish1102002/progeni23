@@ -27,9 +27,9 @@ const ContactInfo = () => {
                 <h2>Student Co-Ordinator</h2>
                 <div className="contact_details" style={{margin:"15px 3px"}}>
                     <img src={phone} alt="phone" id="contact_phone_image"/>    
-                    <div>6382111690</div>
+                    <div>9361415123, 9487431671</div>
                 </div>
-                <div className="harry">Harry</div>
+                <div className="harry">Prakash, Harish</div>
                 <div className="contact_details">
                     <img src={email} alt="phone" />
                     <span>gcecseprogeni@gmail.com</span>
