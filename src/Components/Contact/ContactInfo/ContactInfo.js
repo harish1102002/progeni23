@@ -29,7 +29,6 @@ const ContactInfo = () => {
                     <img src={phone} alt="phone" id="contact_phone_image"/>    
                     <div>9361415123, 9487431671, 6382111690</div>
                 </div>
-                <div className="harry">Harry</div>
                 <div className="contact_details">
                     <img src={email} alt="phone" />
                     <span>gcecseprogeni@gmail.com</span>
