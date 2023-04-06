@@ -11,7 +11,7 @@ const items = [
       "The presentation must be maximum duration of 10 mins",
       "The idea can be imaginary but must be a solution to real-world problems in various fields, including healthcare, education, finance, and sustainability which can be solved through technology",
       "Any act of plagiarism is subject to rejection",
-      "Projects will be filtered out on the basis of their PPT slides sent before hand the event and the top 5 participants will stand a chance to present their project on the day of Poppins",
+      "Projects will be filtered out on the basis of their PPT slides sent before hand the event and shortlisted teams will stand a chance to present their project on the day of Poppins",
       "So make sure your PPT stands out and good luck",
     ],
     desc1:
