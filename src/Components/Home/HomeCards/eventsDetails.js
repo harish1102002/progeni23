@@ -1,7 +1,7 @@
 const items = [
   {
     id: 1,
-    name: "Poppins",
+    name: "Poppins (Paper Presentation)",
     image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg",
     desc: [
       "After Registration, the team leader has to fill the given form & attatch the ppt in it on or before 8th of April",
