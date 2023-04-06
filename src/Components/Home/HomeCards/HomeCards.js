@@ -62,13 +62,12 @@ const HomeCards = () => {
                         <div className="face face1">
                             <div className="content">
                             <i className={techEvent.icon}></i>
-                            {/* <img src={web} alt="web" /> */}
                             <h3>{techEvent.name}</h3>
                             </div>
                         </div>
                         <div className="face face2">
                             <div className="content">
-                                <p>{techEvent.short}</p>
+                                <p>{techEvent.short}</p><br/>
                             <button className="events_readmore"><Link to={`/event/${index+1}`} state={items}>Read More</Link></button> 
                             </div>
                         </div>
@@ -86,7 +85,7 @@ const HomeCards = () => {
                         <div className="face face1">
                             <div className="content">
                             <i className={nonTechEvent.icon}></i>            
-                            <h3>{nonTechEvent.name}</h3>
+                            <h3>{nonTechEvent.name}</h3><br/>
                             </div>
                         </div>
                         <div className="face face2">
