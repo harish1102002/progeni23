@@ -90,7 +90,7 @@ const HomeCards = () => {
                         </div>
                         <div className="face face2">
                             <div className="content">
-                            <p>{nonTechEvent.short}</p>
+                            <p>{nonTechEvent.short}</p><br/>
                             <button className="events_readmore"><Link to={`/event/${index+5}`} state={items}>Read More</Link></button> 
                             </div>
                         </div>
