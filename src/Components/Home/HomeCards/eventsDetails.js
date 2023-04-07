@@ -1,12 +1,12 @@
 const items = [
   {
     id: 1,
-    name: "Poppins (Paper Presentation)",
+    name: "Poppins - Paper Presentation",
     image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg",
     desc: [
-      "After Registration, the team leader has to fill the given form & attatch the ppt in it on or before 8th of April",
+      "After Registration, the team leader has to fill the given form & attatch the ppt in it on or before 10th of April",
       "",
-      "It's a Team Event of 2-4 members",
+      "It's a Team Event of 1-4 members",
       "All team members must be from the same college, can be from different department or year",
       "The presentation must be maximum duration of 10 mins",
       "The idea can be imaginary but must be a solution to real-world problems in various fields, including healthcare, education, finance, and sustainability which can be solved through technology",
@@ -86,8 +86,8 @@ const items = [
       "Meme creation can be from any context or facts",
       "Avoid memes based on 18+, racism, religion, caste, promotion and marketing contents",
       "Meme File Should be in .png or .jpg or .jpeg or .mp4 or .mkv format and duration of the video should not exceed 30 seconds, file size should be less than 50MB",
-      "Send your Meme on or before 9th of April to consider it for evaluation",
-      "Participants have to fill the given form and attach your meme file on or before 9th of April, to participate in this event",
+      "Send your Meme on or before 10th of April to consider it for evaluation",
+      "Participants have to fill the given form and attach your meme file in it on or before 10th of April",
       "",
       "Winners will be chosen only by the panel members, likes are not considered for the evaluation",
       "Any act of plagiarism is subject to rejection",
