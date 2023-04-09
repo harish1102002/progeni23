@@ -57,6 +57,8 @@ const Register = ()=>{
     {toast.error("Email Already Registered, Please Login from Account Tab");return}
     
     const uniqueId = 2300000+n*100+Math.floor(Math.random()*100);
+    if(n==1)
+    uniqueId+=10000;
 
     setStudentInfo({id:uniqueId,email,transid,name,ts});
 
@@ -100,11 +102,7 @@ const Register = ()=>{
       settransid("");
   }
   useEffect(()=>{
-    setn(p.length+1);
-  },[p])
-
-  useEffect(()=>{
-    fetch(site).then((j)=>j.json()).then((j)=>setp(j));
+    fetch(site).then((j)=>j.json()).then((j)=>{setp(j);setn(j.length+1);});
   },[])
 
 return(  
