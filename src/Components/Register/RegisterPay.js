@@ -9,8 +9,8 @@ const RegisterPay = () => {
             </h2>
             <div className="fl2">
             <div className="fl4"><div className="fl3"><img src={im2} className="im"></img>
-            <span>Prakash</span></div><div className="fl3">
-            <img src={im} className="im"></img><span>Javid</span></div></div>
+            <span>Javid</span></div><div className="fl3">
+            <img src={im} className="im"></img><span>Prakash</span></div></div>
             <div className="note"><span>Note:</span>
             <ul>
                 <li>Scan this Qr and make payment of  <b>&#8377;200</b> to confirm your registration <b>online</b>.</li>
