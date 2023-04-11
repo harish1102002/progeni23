@@ -5,7 +5,7 @@ return (
     <div className="register_container">
         <div className="registration_form">
           <div className="content">
-            <form onSubmit={RegisterFormHandler}>
+            <form>
               <div className="user-details">
                 <div className="input-box full">
                   <span className="details">Online Registrations for Progeni is no longer Accepted, thank you!</span>
