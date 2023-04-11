@@ -52,7 +52,7 @@ const Login = () => {
       )}
       {v && (
         <div className="registration_form">
-          <div className="title">Login Successfull</div>
+          <div className="title">Login Successful</div>
           <div className="content content2">
             <form onSubmit={RegisterFormHandler}>
               <div className="login">
