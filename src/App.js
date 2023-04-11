@@ -8,6 +8,7 @@ import Footer from './Components/Footer/Footer';
 import Events from './Components/Events/Events';
 import EventDetails from './Components/Events/EventDetails';
 import Register from './Components/Register/Register';
+import Register2 from './Components/register2';
 import Contact from './Components/Contact/contact';
 import ScrollToTop from './Components/ScrollToTop';
 import Ad from "./Components/admin"
@@ -21,7 +22,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/events" element={<Events/>} />
           <Route path="/event/:id" element={<EventDetails/>} />
-          <Route path="/register"  element={<Register/>}/>
+          <Route path="/register2"  element={<Register2/>}/>
           <Route path="/login" element={<Login/>} />     
           <Route path="/about-us" element={<About/>} />
           <Route path="/contact-us" element={<Contact/>} />

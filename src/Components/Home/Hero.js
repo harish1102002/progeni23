@@ -14,7 +14,7 @@ const HeroHome = () => {
                     <p>A National Level Technical Symposium conducted by Society for Advancement of Computer Science and Engineering (SACSE) in order to nurture and encourage young talents and innovations through different events.</p>
                     <CountDown/>
                 </div>
-                <Link to="/register"><button className="btn-hover color-5">Register Now</button></Link>
+                {/* <Link to="/register"><button className="btn-hover color-5">Register Now</button></Link> */}
                 <div className="waves"></div>
             </section>
         </div>

@@ -60,7 +60,7 @@ function NavBar(props) {
 
             <li className="nav-item">
               <NavLink 
-                to="/register"
+                to="/register2"
                 activeclassname="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
