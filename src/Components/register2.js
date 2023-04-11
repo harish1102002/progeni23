@@ -9,7 +9,7 @@ return (
             <form>
               <div className="user-details">
                 <div className="input-box full">
-                  <h2>Online Registrations for Progeni is no Longer Accepted, Thank You!</h2>
+                  <h3>Online Registrations for Progeni is no Longer Accepted, Thank You!</h3>
                 </div>
               </div>
             </form>
