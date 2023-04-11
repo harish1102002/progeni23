@@ -4,11 +4,12 @@ function Register2(){
 return (
     <div className="register_container">
         <div className="registration_form">
+        <div className="title">Registration</div>
           <div className="content">
             <form>
               <div className="user-details">
                 <div className="input-box full">
-                  <span className="details">Online Registrations for Progeni is no longer Accepted, thank you!</span>
+                  <h1>Online Registrations for Progeni is no Longer Accepted, Thank You!</h1>
                 </div>
               </div>
             </form>
