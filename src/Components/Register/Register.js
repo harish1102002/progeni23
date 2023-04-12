@@ -20,7 +20,7 @@ const Register = ()=>{
   const [thanks,setThanks] = useState(false);
   const [studentInfo,setStudentInfo] = useState({});
   let [loading, setLoading] = useState(false);
-  const site="https://progeni-server.onrender.com/";
+  const site="";
 
   const nameChangeHandler = (e)=>{
     setName(e.target.value);
@@ -44,6 +44,7 @@ const Register = ()=>{
   const RegisterFormHandler = async(e)=>{
 
     e.preventDefault();
+    return;
 
     let pp=p.slice(),zz=0,ts="";
 
@@ -75,14 +76,14 @@ const Register = ()=>{
 
     setLoading(true);
 
-    emailjs.sendForm('service_2qpw1h8', 'template_bmk1ddl', form.current, 'ovDE8AEcF65leEhNr')
-      .then((result) => {}, (error) => {
-          toast.error('error in sending mail');
-      });
-    emailjs.send('service_u68kfjs', 'template_bj0uuox', details, 'nXXhvd-z7kWl4fDml')
-    .then((result) => {}, (error) => {
-        toast.error('error in sending mail');
-    });
+    // emailjs.sendForm('service_2qpw1h8', 'template_bmk1ddl', form.current, 'ovDE8AEcF65leEhNr')
+    //   .then((result) => {}, (error) => {
+    //       toast.error('error in sending mail');
+    //   });
+    // emailjs.send('service_u68kfjs', 'template_bj0uuox', details, 'nXXhvd-z7kWl4fDml')
+    // .then((result) => {}, (error) => {
+    //     toast.error('error in sending mail');
+    // });
     
 
     fetch(site,{

@@ -7,7 +7,7 @@ const RegisterPay = () => {
             <h2 className="payment_details">
                 Payment Details
             </h2>
-            <div className="fl2">
+            {/* <div className="fl2">
             <div className="fl4"><div className="fl3"><img src={im2} className="im"></img>
             <span>Javid</span></div><div className="fl3">
             <img src={im} className="im"></img><span>Prakash</span></div></div>
@@ -22,7 +22,7 @@ const RegisterPay = () => {
                 <li>MemeBuzz is an online event.</li>
                 <li>To consider your work for MemeBuzz and Poppins making payment on or before the event specific <b>deadlines</b> is a requisite.</li>
             </ul></div>
-            </div>
+            </div> */}
         </div>
      );
 }

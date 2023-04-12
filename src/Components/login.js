@@ -6,7 +6,7 @@ const Login = () => {
   const [p, setp] = useState([]);
   const [d, setd] = useState([]);
   const [v, setv] = useState(false);
-  const site="https://progeni-server.onrender.com/";
+  const site="";
 
   useEffect(() => {
     fetch(site)

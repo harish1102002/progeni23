@@ -39,17 +39,17 @@ const ContactForm = () => {
 
         setLoading(true);
 
-        emailjs.sendForm('service_2qpw1h8', 'template_0d4fybv', form.current, 'ovDE8AEcF65leEhNr')
-        .then((result) => {
-            console.log(result.text);
-            toast.success("mail send to team");
-            setLoading(false);
-            reset();
-        }, (error) => {
-            console.log(error.text);
-            toast.error('error in sending mail');
-            setLoading(false);
-        });
+        // emailjs.sendForm('service_2qpw1h8', 'template_0d4fybv', form.current, 'ovDE8AEcF65leEhNr')
+        // .then((result) => {
+        //     console.log(result.text);
+        //     toast.success("mail send to team");
+        //     setLoading(false);
+        //     reset();
+        // }, (error) => {
+        //     console.log(error.text);
+        //     toast.error('error in sending mail');
+        //     setLoading(false);
+        // });
         
             return
         }
