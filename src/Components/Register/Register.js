@@ -107,7 +107,6 @@ const Register = ()=>{
 
 return(  
     <div className="register_container">
-    <RegisterPay/>
       {
         thanks ? <Thanks studentAbstract={studentInfo}/> :
      <div className="registration_form"> 
