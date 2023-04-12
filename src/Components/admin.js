@@ -21,7 +21,7 @@ const Ad =()=>{
 
         fetch("https://progeni-server.onrender.com/").then((j)=>j.json()).then((j)=>{
         j.forEach((k)=>{
-        if(k.id==("#P23D"+v.value.trim()))
+        if(k.id==("#P23"+v.value.trim()))
         {emailjs.send('service_fm95a2p', 'template_e93ol16', {name:k.name,email:k.email}, '0SgbyhRtHDh6zPVpd')
         .then((result) => {}, (error) => {
             toast.error('error in sending mail');
